@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Cafe</title>
+    <link rel="icon" href="./img/cafe.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .nav-link {
+            color: rgb(0, 0, 0) !important;
+            font-size: 18px;
+        }
+
+        .nav-link:hover {
+            background-color: #e0fff4;
+        }
+
+        .main {
+            background-color: gray;
+        }
+
+        .left,
+        .right {
+            background-color: rgb(42, 41, 41);
+            color: white;
+            padding: 10px;
+        }
+
+        .item {
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item img {
+            border-radius: 8px;
+        }
+
+        .cart-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cart-btn:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="container">
+    <!-- Header Section -->
+    <div class="container text-center my-0">
+        <h1 class="text-white">Are You Hungry?</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div id="navbarNav">
+                <ul class="navbar-nav mb-2 ">
+                    <li class="nav-item ms-5">
+                        <a class="nav-link" href="./index2.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a class="nav-link" href="./about1.html" target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a class="nav-link" href="./cart1.html" target="_blank">Cart</a>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a class="nav-link" href="./veg1.html" target="_blank">Menu</a>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a class="nav-link" href="./contact1.html" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./img/slide1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="./img/slide2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="./img/slide3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="./img/slide4.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- Slider end -->
+
+    <!-- Main Section -->
+    <div class="container my-5">
+        <div class="row">
+             <!-- Left Side (Items Selection) -->
+             <div class="col-md-8 bg-dark text-white">
+                <h4 class="mb-3">Select the items:</h4>
+                <hr>
+
+                <!-- Pizza Section -->
+                <h5>Pizza</h5>
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <img src="./img/tom.png" class="img-fluid" alt="Tomato Pizza" style="height: 80px;">
+                        <p>Tomato Pizza</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/chicken.png" class="img-fluid" alt="Chicken Pizza" style="height: 80px;">
+                        <p>Chicken Pizza</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/cheese.png" class="img-fluid" alt="Cheese Pizza" style="height: 80px;">
+                        <p>Cheese Pizza</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/magrita.png" class="img-fluid" alt="Margarita Pizza" style="height: 80px;">
+                        <p>Margarita Pizza</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Burger Section -->
+                <h5>Burger</h5>
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <img src="./img/veg.png" class="img-fluid" alt="Vegetarian Burger" style="height: 80px;">
+                        <p>Vegetarian Burger</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/beefburger.png" class="img-fluid" alt="Beef Burger" style="height: 80px;">
+                        <p>Beef Burger</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/cb.png" class="img-fluid" alt="Cheese Beef Burger" style="height: 80px;">
+                        <p>Cheese Beef Burger</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/chhikennn.png" class="img-fluid" alt="Chicken Burger" style="height: 80px;">
+                        <p>Chicken Burger</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Coffee Section -->
+                <h5>Coffee</h5>
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Americano.png" class="img-fluid" alt="Americano" style="height: 80px;">
+                        <p>Americano</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Cappuccino.png" class="img-fluid" alt="Cappuccino" style="height: 80px;">
+                        <p>Cappuccino</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Cold Brew.png" class="img-fluid" alt="Cold Brew" style="height: 80px;">
+                        <p>Cold Brew</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Matcha Latte.png" class="img-fluid" alt="Matcha Latte" style="height: 80px;">
+                        <p>Matcha Latte</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cupcake Section -->
+                <h5>Cupcakes</h5>
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Black Forest.png" class="img-fluid" alt="Black Forest Cake" style="height: 80px;">
+                        <p>Black Forest Cake</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Vanilla Bean.png" class="img-fluid" alt="Vanilla Bean" style="height: 80px;">
+                        <p>Vanilla Bean</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Red velvet Cake.png" class="img-fluid" alt="Red Velvet Cake" style="height: 80px;">
+                        <p>Red Velvet Cake</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="./img/Salted Caramel.png" class="img-fluid" alt="Salted Caramel" style="height: 80px;">
+                        <p>Salted Caramel</p>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side (Order Summary) -->
+            <div class="col-lg-4 right">
+                <h3>Order Summary</h3>
+                <hr>
+                <div class="order-summary">
+                    <p>Tomato (x2) – $3.00</p>
+                    <p>Chicken (x1) – $5.50</p>
+                    <p>Cheese (x3) – $7.50</p>
+                    <hr>
+                    <p>Subtotal: $16.00</p>
+                    <p>Discount (10% off): -$1.60</p>
+                    <p>Taxes: $1.20</p>
+                    <p>Shipping: $4.00</p>
+                    <hr>
+                    <h5>Total: $19.60</h5>
+                    <p>Estimated Delivery: 3-5 business days</p>
+                    <p>Payment Method: Visa ending in **** 1234</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="row mt-0  text-dark ">
+        <div class="col-lg-4 pt-3 pb-2  bg-light">
+            <h3>About Us</h3>
+            <p style="font-style: italic;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi molestiae repudiandae quaerat incidunt impedit alias dignissimos aut neque cupiditate aspernatur.</p>
+        </div>
+        <div class="col-lg-3 pt-3 pb-2  bg-white">
+            <h3>Photo Gallery</h3>
+            <div class="row">
+                <div class="col-5 mb-0">
+                    <img src="./img/cb.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-5 mb-2">
+                    <img src="./img/fry.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-5 mb-2">
+                    <img src="./img/pizzaaa.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-5 mb-2">
+                    <img src="./img/tom.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 pt-3 pb-2 bg-light">
+            <h3>Contact Us</h3>
+            <b>Call us:</b> +91 0000000 <br>
+            <b>Mail Us:</b> Demo@gmail.com <br>
+            <b>Address:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br><br>
+
+            <!-- Social Icons -->
+            <div class="social-icons d-flex gap-3">
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
